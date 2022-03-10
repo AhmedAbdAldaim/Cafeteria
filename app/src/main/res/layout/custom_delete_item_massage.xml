@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/custom_alert_dialog"
+   >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@drawable/custom_alert_dialog"
+        android:paddingBottom="10dp"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_alert_dialog"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="right"
+                android:id="@+id/cancle"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_cancle"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_delete_massage"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textSize="@dimen/_16ssp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:fontFamily="@font/boutrosmbcinkmmedium"
+                android:textColor="@color/black"
+                android:text="@string/item_delete_massage"
+                android:gravity="center"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp">
+                <Button
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:text="@string/confirm"
+                    app:fontFamily="@font/boutrosmbcinkmmedium"
+                    android:id="@+id/confirm_btn"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_confirm_btn"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    tools:ignore="OnClick" />
+                <View android:layout_height="@dimen/_40sdp"
+                    android:layout_width="@dimen/_40sdp"/>
+                <Button
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:text="@string/cancle"
+                    app:fontFamily="@font/boutrosmbcinkmmedium"
+                    android:id="@+id/cancle_btn"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_cancle_btn"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    tools:ignore="OnClick" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

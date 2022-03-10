@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorAccent">@color/yellow</item>
+        <item name="fontFamily">@font/boutrosmbcinkmmedium</item>
+        <item name="android:navigationBarColor">@color/black</item>
+
+    </style>
+
+
+    <style name="AppThemeNOActionbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="fontFamily">@font/boutrosmbcinkmmedium</item>
+        <item name="android:navigationBarColor">@color/black</item>
+    </style>
+
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/red1</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="fontFamily">@font/boutrosmbcinkmmedium</item>
+    </style>
+
+</resources>

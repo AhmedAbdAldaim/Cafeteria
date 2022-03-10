@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.ybq:Android-Spinkit:1.4.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/85c180633ee90c0d872e5054033c9cd7/jetified-Android-Spinkit-1.4.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/85c180633ee90c0d872e5054033c9cd7/jetified-Android-Spinkit-1.4.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.ybq/Android-Spinkit/1.4.0/6a5e4090845e883cc27942c24efdf44938a63505/Android-Spinkit-1.4.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.ybq/Android-Spinkit/1.4.0/60397bf9260c3fe4d7d616378bb29f533f0bb07e/Android-Spinkit-1.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

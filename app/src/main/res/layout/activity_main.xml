@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Ui.Activity.MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:background="@android:color/transparent"
+        android:id="@+id/framelayout"
+        />
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp"
+    android:id="@+id/navigtion"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:cnb_menuResource="@menu/menu"
+    android:background="@color/white"
+    android:elevation="@dimen/_8sdp"
+    android:layoutDirection="rtl"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

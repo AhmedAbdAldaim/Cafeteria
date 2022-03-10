@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.Activity.ItemsByCategoryId">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/items"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_14ssp"
+        android:fontFamily="@font/boutrosmbcinkmmedium"
+        android:textColor="@color/black"
+        android:text="@string/items"
+        android:gravity="center"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_image_back"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="@id/items"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="@dimen/_30sdp"
+        android:layoutDirection="rtl"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/ic_back"
+            />
+    </androidx.cardview.widget.CardView>
+    <EditText
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:id="@+id/search"
+        android:textDirection="rtl"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:drawableRight="@drawable/ic_saerch"
+        android:drawablePadding="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/items"
+        android:inputType="text"
+        app:fontFamily="@font/boutrosmbcinkmmedium"
+        android:hint="@string/search"
+        android:textSize="@dimen/_14ssp"
+        android:paddingLeft="@dimen/_16sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:background="@drawable/custom_edittext_additems"
+        />
+
+        <LinearLayout
+            android:id="@+id/liner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/search"
+            app:layout_constraintBottom_toTopOf="@id/liner"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:cardElevation="@dimen/_3sdp"
+                android:visibility="gone"
+                android:id="@+id/add_cardview"
+                app:cardBackgroundColor="@color/blue"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="8dp"
+                tools:ignore="MissingConstraints">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_add1"
+                    android:id="@+id/edit"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:id="@+id/viewadd"
+                android:layout_margin="@dimen/_8sdp"
+                android:visibility="gone"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/boutrosmbcinkmmedium"
+                android:gravity="center"
+                android:text="@string/item"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:id="@+id/item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:fontFamily="@font/boutrosmbcinkmmedium"
+                android:gravity="center"
+                android:text="فطائر"
+                android:visibility="invisible"
+                android:textColor="@color/red"
+                android:textSize="@dimen/_14ssp" />
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/boutrosmbcinkmmedium"
+                android:gravity="center"
+                android:text="@string/count_of_items"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:fontFamily="@font/boutrosmbcinkmmedium"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/red"
+                android:textSize="@dimen/_14ssp"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+
+
+
+   <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintTop_toBottomOf="@id/liner"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layoutDirection="rtl"
+    app:layout_constraintHorizontal_bias="0.0"
+    android:layout_marginTop="@dimen/_120sdp"
+    app:layout_constraintVertical_bias="0.0"
+    tools:ignore="NotSibling">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rec"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/grey"
+                    android:layoutDirection="rtl"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmemr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_margin="10dp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <include layout="@layout/shimmer_item_by_categorie_id" />
+
+                        <include layout="@layout/shimmer_item_by_categorie_id" />
+
+                        <include layout="@layout/shimmer_item_by_categorie_id" />
+
+                        <include layout="@layout/shimmer_item_by_categorie_id" />
+
+                        <include layout="@layout/shimmer_item_by_categorie_id" />
+
+                        <include layout="@layout/shimmer_item_by_categorie_id" />
+
+                    </LinearLayout>
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+            </FrameLayout>
+
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnconnection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/try_agin"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/connection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/empty_items"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">مينيو</string>
+    <!-- Connection -->
+    <string name="connect_internet">الرجاء التحقق إتصال الانترنت </string>
+    <string name="connect_internet_slow">هناك مشكلة في الإتصال بالانترنت </string>
+    <string name="loading">جار التحميل...</string>
+    <string name="wait">أرجو الإنتظار ....</string>
+    <string name="try_agin">حاول مرة اخرى</string>
+    <string name="ok">موافق</string>
+    <string name="error">خطأ</string>
+    <string name="servererror"> حدث خطأ ما يرجى المحاولة مرة أخرى في وقت لاحق</string>
+    <string name="expir_date_finsh">هذا الحساب غير نشط او قد انتهت صلاحيته</string>
+
+    <!-- Login -->
+    <string name="phone_hint">999999999</string>
+    <string name="lock_hint">كلمة المرور</string>
+    <string name="login_btn">تسجيل الدخول</string>
+    <string name="phone_number_empty">أدخل رقم الهاتف</string>
+    <string name="password_empty">أدخل كلمة المرور</string>
+    <string name="password_check">كلمة المرور من 8 خانات او أكثر !</string>
+    <string name="phone_valid">الرجاء إدخال رقم هاتف صالح !</string>
+
+    <!--Home Fragemnet -->
+    <string name="categorie">الأصناف</string>
+    <string name="empty_categorie">لا توجد اصناف</string>
+    <string name="expirt">عفوا ، لقد انتهى اشتراكك في </string>
+    <string name="expirt1">يمكنك التواصل مع إدارة التطبيق لتجديد اشتراكك.</string>
+    <string name="call">تواصل</string>
+    <string name="msg_card">يرجى مراجعة الإدارة.</string>
+
+    <!--Notification Fragemnet -->
+    <string name="dateofnotification">التاريخ :</string>
+    <string name="empty_notification">لا توجد إشعارات</string>
+    <string name="notification">الإشعارات</string>
+
+    <!--Profile Fragemnet -->
+    <string name="profile">الملف الشخصي</string>
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="about">عن التطبيق</string>
+    <string name="theprivate">سياسة الخصوصية</string>
+    <string name="service">تفاصيل إشتراكك</string>
+    <string name="logout">تسجيل خروج</string>
+    <string name="logout_massage">هل تريد تسجيل الخروج ؟</string>
+
+    <!--Items -->
+    <string name="items">العناصر</string>
+    <string name="count_of_items">العدد :</string>
+    <string name="search">بحث</string>
+    <string name="empty_items">لا توجد عناصر</string>
+    <string name="edit_item">تعديل العنصر</string>
+    <string name="successfulyy_edited">تم التعديل بنجاح!</string>
+    <string name="edit">تعديل</string>
+    <string name="item">العنصر :</string>
+    <string name="item_delete_massage">هل تريد إزالة </string>
+    <string name="delete_item">إزالة العنصر</string>
+    <string name="successfulyy_deleteed">تم الإزالة بنجاح!</string>
+    <string name="delete">إزالة</string>
+    <string name="confirm">تأكيد</string>
+    <string name="cancle">إلغاء</string>
+
+    <!--Add Item -->
+    <string name="add_item">إضافة عنصر</string>
+    <string name="successfulyy_added">تم الإضافة بنجاح!</string>
+    <string name="item_name">أسم العنصر</string>
+    <string name="item_price">السعر</string>
+    <string name="item_name_empty">أدخل أسم العنصر</string>
+    <string name="item_price_empty">أدخل السعر</string>
+    <string name="categorie_type">نوع الصنف</string>
+    <string name="added">إضافة</string>
+    <string name="added_note">*سيتم عرض المنيو حسب اولوية إدخال الأصناف</string>
+
+    <!-- Edit Profile -->
+    <string name="actionbar_editprofile">تعديل الملف الشخصي</string>
+    <string name="name_hint_editprofile">أسم المستخدم</string>
+    <string name="Canot_edit_name_hint_editprofile">لا يمكن تعديل الإسم !</string>
+    <string name="cafeteria_hint_editprofile">أسم المحل</string>
+    <string name="location_hint_editprofile">الموقع</string>
+    <string name="phone_hint_editprofile">999999999</string>
+    <string name="lock_hint_editprofile">كلمة المرور</string>
+    <string name="edit_password_tv">تعديل كلمة المرور</string>
+    <string name="edit_btn">تعديل</string>
+    <string name="cafeteria_hint_editprofile_empty">أدخل أسم المحل</string>
+    <string name="location_hint_editprofile_empty">أسم الموقع</string>
+    <string name="phone_number_editprofile_empty">أدخل رقم الهاتف</string>
+    <string name="password_editprofile_empty">أدخل كلمة المرور</string>
+    <string name="password_editprofile_check">كلمة المرور من 8 خانات او أكثر !</string>
+    <string name="phone_editprofile_valid">الرجاء إدخال رقم هاتف صالح !</string>
+
+
+    <!-- Edit Password -->
+    <string name="old_password_editpassword">كلمة المرور الحالية</string>
+    <string name="new_password_editpassword">كلمة المرور الجديدة</string>
+    <string name="new_password_confirm_editpassword">تأكيد كلمة المرور الجديدة</string>
+    <string name="old_password_editpassword_empty">أدخل كلمة المرور الحالية</string>
+    <string name="new_password_editpassword_empty">أدخل كلمة المرور الجديدة</string>
+    <string name="new_password_confirm_empty">أدخل تأكيد كلمة المرور الجديدة</string>
+    <string name="password_similarity_edit_profile">الرجاء التحقق من تشابه كلمة المرور !</string>
+    <string name="wrong_password">كلمة المرور غير صحيحة !</string>
+
+    <!--ThePrivate -->
+    <string name="about_the_private">تحكم سياسة الخصوصية الأسلوب الذي يقوم به "تطبيق مينيو" بجمع وإستخدام والحفاظ على المعلومات التى تم جمعها من قبل المستخدمين ، ستجد هنا سياستنا الخاصة بالإدارة وتعاملنا مع المعلومات الشخصية التى نحصل عليها من مستخدمي التطبيق :</string>
+    <string name="priavte_num1">- التعامل مع بيانات المستخدم</string>
+    <string name="detailes_private_num1">نقوم بتسجيل بعض المعلومات المهمة لإكمال عملية التسجيل لدى المستخدم ، تشمل هذه المعلومات الإسم ورقم الهاتف والموقع الجغرافي للمحل ، ويتم تسجيل كلمة مرور افتراضية على ان يقوم المستخدم بإعادة تعينها من خلال تطبيق مينيو . </string>
+    <string name="priavte_num2">- الحماية </string>
+    <string name="detailes_private_num2">معلوماتك الشخصية او الخاص بك محمية لدينا ، يعمل تطبيق مينيو على حماية كل ما يتعلق ببيانات المستخدم بحيث انه لا يمكن لاي شخص اخر حتى وان استطاع معرفة بيانات تسجيل الدخول من تسجيل الدخول بحسابك حيث ان حسابك متصل بالهاتف الخاص بك فقط ، وانه في حالة تعرض هاتفك للسرقة او التلف يمكنك إبلاغنا بذلك وسنقوم بإعادة تفعيل حسابك بعد التحقق منك. </string>
+    <string name="priavte_num3">- تعهد </string>
+    <string name="detailes_private_num3">نتعهد في تطبيق مينيو بعدم بيع او نشر او إستخدام البيانات الخاصة بك كإسمك او رقم هاتفك او موقع محلك الجغرافي لإي طرف ثالث ، واتخاذ كافة الإحتياطات للمحافظة على معلوماتك وعدم الوصول إليها من اطراف غير مسؤولة.</string>
+    <string name="priavte_num4">- الإستفسار بخصوص سياسة الخصوصية</string>
+    <string name="detailes_private_num4">إئا كان لديك أسئلة او اهتمامات حول سياسة الخصوصية المتبعة من قبلنا ، الرجاء التواصل معنا عبر البريد الإلكتروني menuapp@gmail.com</string>
+    <string name="menu_email">menuappsd@gmail.com</string>
+
+    <!--About -->
+    <string name="about_app">مرحبا بكم في تطبيق مينيو - التطبيق الاول في السودان المختص بصناعة قوائم الطعام الإلكترونية عن طريق Qrcode لعرض قائمة طعام معطمك ، بالإضافة الى إدارة قائمة الطعام والتحكم في الاصناف والعناصر الخاصة بمطعمك .</string>
+    <string name="task_about_app">المهمة:</string>
+    <string name="detailes_task_about_app">مهمتنا تسهيل تجرية التحول الرقمي في السودان.</string>
+    <string name="version_about_app">الرؤية:</string>
+    <string name="detailes_version_about_app">الريادة والحداثة في تجربة التحول الرقمي بأسرع وقت ممكن.</string>
+    <string name="version">النسخة 1.0</string>
+    <string name="callus">تواصل معنا :</string>
+    <string name="company">طور بواسطة :</string>
+    <string name="companyname">شركة 7D البرمجية.</string>
+
+    <!--Service -->
+    <string name="expir_date">ينتهي إشتراكك في تاريخ </string>
+    <string name="expir_date2">لتجديد إشتراكك تواصل معنا . </string>
+
+</resources>

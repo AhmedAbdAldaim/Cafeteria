@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cafeteria">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".Ui.Activity.ThePrivate" />
+        <activity android:name=".Ui.Activity.AboutApp" />
+        <activity android:name=".Ui.Activity.EditPassword" />
+        <activity android:name=".Ui.Activity.Logout" />
+        <activity android:name=".Ui.Activity.EditProfile" />
+        <activity android:name=".Ui.Activity.ItemsByCategoryId" />
+        <activity android:name=".Ui.Activity.AddItem" />
+        <activity android:name=".Ui.Activity.Login" />
+        <activity
+            android:name=".Ui.Activity.MainActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".Ui.Activity.SplashScreen"
+            android:theme="@style/AppThemeNOActionbar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".Ui.Notification.BroadCast">
+            <intent-filter>
+                <action android:name="com.example.Broadcast" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".Ui.Notification.Service"
+            android:exported="false" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>
